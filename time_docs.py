@@ -1,7 +1,7 @@
 flag_year=[]
 for i in range(15):
     flag_year.append(0)
-with open('习近平党建数据库切词.txt','r',encoding='utf8') as file:
+with open('师德师风切词.txt','r',encoding='utf8') as file:
     words_lines=file.readlines()
 flag=0
 for words_line in words_lines:
@@ -60,5 +60,5 @@ for time_year in time_years:
         lines.append(str(year))
     year = year + 1
 print(sum_num)
-with open('习近平党建数据库时间.txt', 'w', encoding='utf-8') as f:
+with open('师德师风时间.txt', 'w', encoding='utf-8') as f:
     f.write("\n".join(lines))
